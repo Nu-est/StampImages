@@ -132,7 +132,7 @@ namespace StampImages.Core
             Bitmap stampImage = new Bitmap(imageWidth, imageHeight);
 
             Graphics graphics = Graphics.FromImage(stampImage);
-
+            graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             graphics.SmoothingMode = SmoothingMode.HighQuality;
 
             // 回転
